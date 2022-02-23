@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/applyloan/static/css/main.7af88a0e.css",
-    "main.js": "/applyloan/static/js/main.5395b03e.js",
+    "main.js": "/applyloan/static/js/main.c84b1a48.js",
     "static/js/787.c164116e.chunk.js": "/applyloan/static/js/787.c164116e.chunk.js",
     "index.html": "/applyloan/index.html",
     "main.7af88a0e.css.map": "/applyloan/static/css/main.7af88a0e.css.map",
-    "main.5395b03e.js.map": "/applyloan/static/js/main.5395b03e.js.map",
+    "main.c84b1a48.js.map": "/applyloan/static/js/main.c84b1a48.js.map",
     "787.c164116e.chunk.js.map": "/applyloan/static/js/787.c164116e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7af88a0e.css",
-    "static/js/main.5395b03e.js"
+    "static/js/main.c84b1a48.js"
   ]
 }
