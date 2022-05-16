@@ -35,8 +35,13 @@ const App = () => {
     await axios.post(MAIN_URL + '/customer/applyloans', data)
       .then((response) => {
         console.log(response.status);
+        if (response.status === 200) {
+          alert("ส่งข้อมูลให้บริษัทแล้ว โปรดรอการติดต่อกลับ");
+        }
         // getAllReports();
         //   setDataSource(response.data);
+      }).catch(err => {
+        alert("ส่งข้อมูลล้มเหลว" + err);
       });
   }
 
@@ -58,15 +63,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: 50 }}>
-
-      <PageHeader
-        // className="site-page-header"
-        // onBack={() => null}
-        title="สมัครขอสินเชื่อ"
-      // subTitle="กรุณากรอกรายละเอียดให้ครบถ้วน"
-      />
-
+    <div style={{padding:24, marginBottom: 100, backgroundColor: 'white' }}>
       <Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
 
         <Form.Item
@@ -148,6 +145,7 @@ const App = () => {
           </Button>
         </Form.Item>
       </Form>
+
     </div>
 
   );
